@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PictureDownloading" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CFo-vC-1IA">
+                                <rect key="frame" x="0.0" y="20" width="375" height="419"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LGY-iD-CCQ">
+                                <rect key="frame" x="0.0" y="475" width="375" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="MNh-H6-gWA"/>
+                                </constraints>
+                                <state key="normal" title="Load image &quot;Dog&quot;"/>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uxc-rA-9M9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hsj-D2-xfF">
+                                <rect key="frame" x="0.0" y="603" width="375" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="8bC-xd-spy"/>
+                                </constraints>
+                                <state key="normal" title="Load image &quot;Owl&quot;"/>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sOm-rd-gaX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GBh-yg-R8Q">
+                                <rect key="frame" x="0.0" y="539" width="375" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="H2J-CL-kKw"/>
+                                </constraints>
+                                <state key="normal" title="Load image &quot;Cat&quot;"/>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rB7-Ve-pW7"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="GBh-yg-R8Q" firstAttribute="top" secondItem="LGY-iD-CCQ" secondAttribute="bottom" constant="16" id="Edi-qf-nxz"/>
+                            <constraint firstItem="CFo-vC-1IA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="FqH-bm-Xwl"/>
+                            <constraint firstItem="LGY-iD-CCQ" firstAttribute="top" secondItem="CFo-vC-1IA" secondAttribute="bottom" constant="36" id="Mgq-ou-B2U"/>
+                            <constraint firstItem="CFo-vC-1IA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="T4T-8c-Nts"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GBh-yg-R8Q" secondAttribute="trailing" id="VU3-FE-gv1"/>
+                            <constraint firstItem="GBh-yg-R8Q" firstAttribute="top" secondItem="LGY-iD-CCQ" secondAttribute="bottom" constant="16" id="c9u-BX-ymg"/>
+                            <constraint firstItem="hsj-D2-xfF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="elw-lW-6f1"/>
+                            <constraint firstItem="GBh-yg-R8Q" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="gyT-zR-37I"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CFo-vC-1IA" secondAttribute="trailing" id="haG-xd-7We"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LGY-iD-CCQ" secondAttribute="trailing" id="m9k-Zq-g1m"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="hsj-D2-xfF" secondAttribute="bottom" constant="16" id="rNp-PJ-AMX"/>
+                            <constraint firstItem="LGY-iD-CCQ" firstAttribute="top" secondItem="CFo-vC-1IA" secondAttribute="bottom" constant="36" id="sID-aA-AOm"/>
+                            <constraint firstItem="hsj-D2-xfF" firstAttribute="top" secondItem="GBh-yg-R8Q" secondAttribute="bottom" constant="16" id="tkj-7S-OZt"/>
+                            <constraint firstItem="LGY-iD-CCQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="v92-JL-wcJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hsj-D2-xfF" secondAttribute="trailing" id="xOl-DQ-o1Y"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="firstImageButton" destination="LGY-iD-CCQ" id="CfQ-dh-KG6"/>
+                        <outlet property="imageFromWeb" destination="CFo-vC-1IA" id="o5z-9l-urd"/>
+                        <outlet property="secondImageButtn" destination="GBh-yg-R8Q" id="oye-Mu-UVu"/>
+                        <outlet property="thirdImageButton" destination="hsj-D2-xfF" id="hLf-4d-keU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
